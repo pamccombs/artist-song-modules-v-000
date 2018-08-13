@@ -5,7 +5,11 @@ module Findable
     end
     
     def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
-  en
+      @@artists.detect{|a| a.name == name}
+    end
+  end
+  
+  module InstanceMethods
+  end
   
 end
