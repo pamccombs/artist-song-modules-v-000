@@ -21,10 +21,11 @@ class Artist
     #@@artists.detect{|a| a.name == name}
   #end
 
-  #def initialize
+  def initialize
     #@@artists << self
-    #@songs = []
-  #end
+    super
+    @songs = []
+  end
 
   def self.all
     @@artists
